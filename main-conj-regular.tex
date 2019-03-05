@@ -1,13 +1,12 @@
 \input{preamble}
 
 \begin{document}
-%\lipsum % Text before
 \afterpage{%
     \clearpage% Flush earlier floats (otherwise order might not be correct)
     \thispagestyle{empty}% empty page style (?)
 %    \begin{landscape}% Landscape page
         \centering % Center table
-        \input{tab-conj-test}
+        \input{tab-conj-regular}
         \bigskip
         \bigskip
         \bigskip
@@ -15,5 +14,4 @@
 %    \end{landscape}
     \clearpage% Flush page
 }
-%\lipsum % Text after
 \end{document}
