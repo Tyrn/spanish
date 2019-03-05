@@ -5,10 +5,12 @@
 \usepackage{capt-of}% or use the larger `caption` package
 
 \usepackage{lipsum}% dummy text
+\usepackage{arydshln}
 
 \newcommand{\colhead}[1]{\textit{\textbf{#1}}}
 \newcommand{\sj}[1]{\textit{#1}}
 \newcommand{\tn}[1]{\scriptsize #1}
+\newcommand{\cdashln}{\cdashline{3-8}}
 
 \begin{document}
 %\lipsum % Text before
@@ -47,6 +49,39 @@
 %            \hline
         \end{tabular}
         \captionof{table}{Regular verb endings}% Add 'table' caption
+        \bigskip
+        \bigskip
+        \bigskip
+        \begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			& \colhead{Subj}
+			& \colhead{Present}
+			& \colhead{Preterit}
+			& \colhead{Imperfect}
+			& \colhead{Future}
+			& \colhead{Conditional}
+			& \colhead{Subjunctive} \\\hline
+			& \sj{yo}   &      &        &        &      &       &      \\\cdashln
+			& \sj{tú}   &      &        &        &      &       &      \\\cdashln
+    \tn{ar} & \sj{Ud.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Ns.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Vs.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Uds.} &      &        &        &      &       &      \\\hline
+			& \sj{yo}   &      &        &        &      &       &      \\\cdashln
+			& \sj{tú}   &      &        &        &      &       &      \\\cdashln
+	\tn{er} & \sj{Ud.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Ns.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Vs.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Uds.} &      &        &        &      &       &      \\\hline
+			& \sj{yo}   &      &        &        &      &       &      \\\cdashln
+			& \sj{tú}   &      &        &        &      &       &      \\\cdashln
+	\tn{ir} & \sj{Ud.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Ns.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Vs.}  &      &        &        &      &       &      \\\cdashln
+			& \sj{Uds.} &      &        &        &      &       &      \\\hline
+			%            \hline
+		\end{tabular}
+		\captionof{table}{Verb endings test}% Add 'table' caption
 %    \end{landscape}
     \clearpage% Flush page
 }
