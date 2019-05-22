@@ -4,6 +4,9 @@
 \usepackage{afterpage}
 \usepackage{capt-of}% or use the larger `caption` package
 
+\usepackage{makecell}
+\usepackage{multirow}
+
 \usepackage{lipsum}% dummy text
 \usepackage{arydshln}
 
@@ -11,3 +14,6 @@
 \newcommand{\sj}[1]{\textit{#1}}
 \newcommand{\tn}[1]{\scriptsize #1}
 \newcommand{\cdashln}{\cdashline{3-9}}
+\newcommand{\mkcellbf}[1]{\makecell{\textbf{#1}}}
+\newcommand{\mkcelltn}[1]{\makecell{\scriptsize #1}}
+\newcommand{\mkcellitbf}[1]{\makecell{\textit{\textbf{#1}}}}
