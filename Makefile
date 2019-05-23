@@ -20,7 +20,7 @@ cleantarget:
 
 clean: mopup cleantarget
 
-# run:
-# 	latexmk
+run:
+	latexmk main-*.tex
 	
 .PHONY: mopup cleantarget clean
