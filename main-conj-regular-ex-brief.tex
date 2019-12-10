@@ -1,13 +1,68 @@
 \input{preamble}
+\usepackage[margin=0.3in]{geometry}
+
+\newcommand{\twotabvspace}{\vspace{0.3in}}
 
 \begin{document}
 \afterpage{%
     \clearpage% Flush earlier floats (otherwise order might not be correct)
     \thispagestyle{empty}% empty page style (?)
-    \begin{landscape}% Landscape page
+%    \begin{landscape}% Landscape page
         \centering % Center table
+
+        \begin{tabular}[]{c}
+            \Large Common verbs \\
+        \end{tabular}
+
+        \twotabvspace
+
+        \begin{tabular}[]{|l|l|l|l|l|l|l|l|l|l|l|l|}
+            \hline
+            \input{tab-preamble-ex}
+            \hline
+                    & \sj{yo}   & soy   & fui      & era    & seré    & ía    & fuese    & fuera    & fuere    & sea    &        \\
+                    & \sj{tú}   & eres  & fuiste   & eras   & serás   & ías   & fueses   & fueras   & fueres   & seas   & sé     \\
+            \tn{~~} & \sj{Ud.}  & es    & fue      & eran   & será    & ía    & fuese    & fuera    & fuere    & sea    & sea    \\
+                    & \sj{Ns.}  & somos & fuimos   & éramos & seremos & íamos & fuésemos & fuéramos & fuéremos & seamos & seamos \\
+                    & \sj{Vs.}  & sois  & fuisteis & erais  & seréis  & íais  & fueseis  & fuerais  & fuereis  & seáis  & sed    \\
+                    & \sj{Uds.} & son   & fueron   & eran   & serán   & ían   & fuesen   & fueran   & fueren   & sean   & sean   \\\hline
+        \end{tabular}
+        \captionof{table}{Ser}% Add 'table' caption
+
+        \twotabvspace
+
+        \begin{tabular}[]{|l|l|l|l|l|l|l|l|l|l|l|l|}
+            \hline
+            \input{tab-preamble-ex}
+            \hline
+                    & \sj{yo}   & voy   & fui      & iba    & iré    & ía    & fuese    & fuera    & fuere    & vaya    &         \\
+                    & \sj{tú}   & vas   & fuiste   & ibas   & irás   & ías   & fueses   & fueras   & fueres   & vayas   & ve      \\
+            \tn{~~} & \sj{Ud.}  & va    & fue      & iba    & irá    & ía    & fuese    & fuera    & fuere    & vaya    & vaya    \\
+                    & \sj{Ns.}  & vamos & fuimos   & íbamos & iremos & íamos & fuésemos & fuéramos & fuéremos & vayamos & vayamos \\
+                    & \sj{Vs.}  & vais  & fuisteis & ibais  & iréis  & íais  & fueseis  & fuerais  & fuereis  & vayáis  & id      \\
+                    & \sj{Uds.} & van   & fueron   & iban   & irán   & ían   & fuesen   & fueran   & fueren   & vayan   & vayan   \\\hline
+        \end{tabular}
+        \captionof{table}{Ir}% Add 'table' caption
+
+        \twotabvspace
+
+        \begin{tabular}[]{|l|l|l|l|l|l|l|l|l|l|l|l|}
+            \hline
+            \input{tab-preamble-ex}
+            \hline
+                    & \sj{yo}   & he     & hube      & había    & habré    & ía    & hubiese    & iera    & iere     & haya    & \\
+                    & \sj{tú}   & has    & hubiste   & habías   & habrás   & ías   & hubieses   & ieras   & ieres    & hayas   & \\
+            \tn{~~} & \sj{Ud.}  & ha     & hubo      & había    & habrá    & ía    & hubiese    & iera    & iere     & haya    & \\
+                    & \sj{Ns.}  & hemos  & hubimos   & habíamos & habremos & íamos & hubiésemos & iéramos & iéremos  & hayamos & \\
+                    & \sj{Vs.}  & habéis & hubisteis & habíais  & habréis  & íais  & hubieseis  & ierais  & iereis   & hayáis  & \\
+                    & \sj{Uds.} & han    & hubieron  & habían   & habrán   & ían   & hubiesen   & ieran   & ieren    & hayan   & \\\hline
+        \end{tabular}
+        \captionof{table}{Haber}% Add 'table' caption
+
+        \twotabvspace
+
         \input{tab-conj-regular-ex-brief}
-    \end{landscape}
+%    \end{landscape}
     \clearpage% Flush page
 }
 \end{document}
